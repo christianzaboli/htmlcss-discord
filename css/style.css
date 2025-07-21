@@ -1,0 +1,213 @@
+/* generals */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center ;
+}
+
+/* specifiche header */
+header{
+    height: 70px;
+    width: 100%;
+    
+    display: flex;
+    flex-flow: row;
+}
+.small-header-sect{
+    height: 50%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.big-header-sect{
+    height: 50%;
+    width: 200px;
+    display: flex;
+    flex-grow: 4;
+    align-items: center;
+    justify-content: center;
+}
+#login-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* main */
+
+main{
+    height: 4000px;
+    display: flex;
+    flex-flow: column;
+}
+
+/* jumbotron */
+
+.jumbotron{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+.jumbotron-content{
+    height: 85%;
+    width: 65%;
+
+}
+
+/* main .main-sections */
+
+.main-sections{
+    height: 100%;
+    width: 100%;
+    background-color: #b9b9b9;
+}
+.white-bg{
+    background-color: #fff;
+}
+.text-block{   
+    height: 85%;
+    width: 60%;
+}
+.img-block{
+    width: 40%;
+    height: 85%;
+}
+.middle{
+    order: 1;
+}
+.final-section{
+    background-color: #232323;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+#fix-final-section{
+    justify-content: center;
+    align-items: center;
+}
+.sub-final-section{
+    display: flex;
+    width: 70%;
+    height: 85%;
+
+}
+.final-section-block{
+    width: calc(100% / 4);
+    height: 100%;
+}
+.bigger{
+    width: 30%;
+    height: 85%;
+}
+/* big section */
+
+.bigsection{
+    height: 150%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+.bigsection-content{
+    height: 90%;   
+}
+
+/* footer */
+
+footer{
+    height: 70px;
+    width: 100%;
+    background-color: #232323;
+
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.footer-box{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo{
+    height: 25px;
+    width: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-button{
+    height: 25px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* debug */
+
+
+.debug header{
+    background-color: aqua;
+}
+.debug .small-header-sect{
+    background-color: white;
+}
+.debug .big-header-sect{   
+    background-color: rgb(133, 133, 133);
+}
+
+.debug .jumbotron{
+    background-color: blue;
+}
+.debug .jumbotron-content{
+   background-color: pink;
+}
+.debug .text-block{
+    background-color: #05b6b6;
+}
+.debug .img-block{
+    background-color: #be36a8;
+}
+.debug .final-section-block{
+    background-color: #fff;
+    border: 2px solid red;
+}
+.debug .bigger{
+    background-color: #05b6b6;
+}
+.debug footer{    
+    border-top: 2px dotted rgb(196, 196, 196);
+}
+.debug .footer-box{
+    background-color: #b9b9b9;
+}
+.debug .bigsection-content{
+    background-color: pink;
+}
+.debug .footer-logo{
+    background-color: orange;
+}
+.debug .footer-button{
+    background-color: orange;
+}
