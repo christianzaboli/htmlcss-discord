@@ -8,6 +8,16 @@ body{
     display: flex;
     flex-direction: column;
 }
+ul{
+    list-style-type: none;
+    min-width: 550px;
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: inherit;
+    justify-content: space-around;
+
+
+}
 .container{
     width: 75%;
     height: 100%;
@@ -20,19 +30,21 @@ body{
 .button-white{
     color: #23272a;
     background-color: white;
-    padding: 20px;
+    padding: 15px 25px;
     border-radius: 50px;
 }
 .button-black{
     color: white;
     background-color: #23272a;
-    padding: 20px;
+    padding: 15px 25px;
     border-radius: 50px;
 }
 img{
     object-fit: contain;
 }
+
 /* specifiche header */
+
 header{
     color: #fff;
     height: 70px;
@@ -49,11 +61,10 @@ header{
 }
 .big-header-sect{
     height: 50%;
-    width: 200px;
+    min-width: 550px;
     display: flex;
-    flex-grow: 4;
+    flex-grow: 2;
     align-items: center;
-    justify-content: center;
 }
 #login-header{
     display: flex;
@@ -115,7 +126,7 @@ main{
     align-items: center;
     width: 600px;
     height: auto;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 #jumbotron-button div{
     font-size: 1.5em;
