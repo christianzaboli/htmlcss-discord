@@ -170,31 +170,7 @@ main{
 .middle{
     order: 1;
 }
-.final-section{
-    background-color: #232323;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-}
-#fix-final-section{
-    justify-content: center;
-    align-items: center;
-}
-.sub-final-section{
-    display: flex;
-    width: 70%;
-    height: 85%;
 
-}
-.final-section-block{
-    width: calc(100% / 4);
-    height: 100%;
-}
-.bigger{
-    width: 30%;
-    height: 85%;
-}
 .main-sections h2{
     font-size: 50px
 }
@@ -246,6 +222,85 @@ main{
     color: white;
     padding: 15px 25px;
     border-radius: 50px;
+}
+/* sezione finale */
+
+.final-section{
+    background-color: #232323;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+#fix-final-section{
+    justify-content: center;
+    align-items: center;
+}
+
+.bigger{
+    width: 30%;
+    height: 85%;
+    padding: 50px;
+    display: flex;
+    flex-flow: column;
+    
+}
+.sub-final-section{
+    color: white;
+    width: 70%;
+    height: 85%;
+    display: flex;
+        flex-flow: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.final-section-block{
+    width: calc(100% / 4);
+    height: 100%;
+    padding: 50px 0;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+h3, h4{
+    color: #7686DE;
+}
+h3{
+    font-size: 35px;
+}
+.italia{
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 14px;
+    height: 20px;
+    width: 90px;
+    color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.italia > img{
+    height: inherit;
+}
+.socials{
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.ul-block{
+    list-style-type: none;
+    margin: 5px 0;
+    min-width: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+.ul-block > li{
+    margin: 5px 0;
 }
 /* footer */
 
