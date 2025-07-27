@@ -8,7 +8,9 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+a{
+    text-decoration: none;
+}
 .container{
     width: 75%;
     height: 100%;
@@ -41,12 +43,9 @@ body{
 img{
     object-fit: contain;
 }
-main > img{
-}
 /*---------- specifiche header ----------*/
 
 header{
-    color: #fff;
     height: 70px;
     width: 100%;
     background-color: #255EE9;
@@ -78,6 +77,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.big-header-sect ul a{
+    color: white;
 }
 
 /* ----------main---------- */
@@ -123,22 +125,21 @@ main{
 }
 #jumbotron-text{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 #jumbotron-button{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 700px;
-    height: auto;
     margin-top: 40px;
 }
-#jumbotron-button div{
+#jumbotron-button a{
     font-size: 1.5em;
-    margin: 0 20px;
+    /* margin: 0 20px; */
 }
 /* ----------main .main-sections---------- */
 
@@ -186,6 +187,15 @@ main{
     font-size: 20px;
     margin-top: 20px;
     color: #232323;
+}
+.container-main{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center ;
 }
 /* ----------big section---------- */
 
@@ -288,11 +298,13 @@ h3{
 .socials{
     font-size: 20px;
     width: 70%;
-    color: white;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+}
+.socials a{
+    color: white;
 }
 .ul-block{
     list-style-type: none;
@@ -339,6 +351,86 @@ footer{
 .footer-box .button-blue{
     font-size: 12px;
     padding: 13px 20px;
+}
+
+
+/* display porting */
+
+
+/* -------TABLET W 768PX */
+
+@media screen and (max-width: 768px) {
+    .button-white{
+    padding: 10px 15px;
+    font-size: 15px;
+    }
+    /* header */
+    header li{
+        font-size: 0.9em;
+    }
+
+    /* jumbotron */
+
+    .jumbotron {
+        height: 55%;    
+        background-position: center;
+    }
+    .jumbotron-content{
+        width: 82%;
+    }
+    #jumbotron-text{
+        width: 100%;
+    }
+    .jumbotron-content h1{
+        font-size: 54px;
+    }
+    #jumbotron-button {
+        width: 600px;
+    }
+    #jumbotron-button a {
+    font-size: 1.3em;
+    }
+
+    .small-header-sect{
+        width: auto;
+    }
+
+    /* mid sections */
+    .container-main{
+        flex-flow: column;
+    }
+    .img-block{
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+    }
+    .text-block{
+        width: auto;
+        height: auto;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .main-sections h2 {
+        font-size: 38px;
+    }
+    .middle {
+        order: 0;
+    }
+    .final-section .container-main{
+        width: 95%;
+    }
+    .bigger{
+        width: auto;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .sub-final-section{
+        width: 100%;
+    }
+    .footer-container{
+        width: 95%;
+    }
 }
 
 /* ----------body debug---------- */
